@@ -1,4 +1,5 @@
  squares in n*n board
+ 
  #include <stdio.h>
  int main() {
   int n,squarecount;
@@ -9,6 +10,7 @@
 }
 
 Kilometers to miles
+
 #include <stdio.h>
 
 int main() {
@@ -20,6 +22,7 @@ int main() {
 }
 
  Largest Number
+ 
  #include <stdio.h>
 int main() {
 int a,b,c;
@@ -34,6 +37,7 @@ int a,b,c;
 }
 
  Hours and Minutes
+ 
  #include <stdio.h>
 int main()
 {

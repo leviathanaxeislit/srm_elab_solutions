@@ -1,5 +1,5 @@
 Q. 75: Phd Fees
-`#include <stdio.h>
+```#include <stdio.h>
 #include<string.h>
 struct student
 {
@@ -39,3 +39,44 @@ int main()
   printf("Name=%s\nRollNo=%d\nDate of birth=%d/%d/%d",std.name,std.DOB.rollno,std.DOB.date,std.DOB.month,std.DOB.year);
   return 0;
 }`
+
+Q. 66: super digit
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+int superd(long long int sumd)
+{
+    int t=0;
+    if(sumd/10==0)
+        {return sumd;}
+    else
+        {
+         
+         while(sumd!=0)
+             {
+             int d;
+             d=sumd%10;
+             t=t+d;
+             sumd=sumd/10.0;
+         }
+        }
+   sumd=t; 
+   return superd(sumd);
+}    
+int main() {
+    int p; long long int sumd=0;
+    char ch;
+    ch=getchar();
+    while(ch!=' ')
+    {
+      int q=ch-'0';
+      sumd=sumd+q;
+      ch=getchar();  
+    }    
+    scanf("%d",&p);
+    sumd=p*sumd;
+    //printf("%d",sum);
+    printf("%d",superd(sumd));
+    return 0;
+}

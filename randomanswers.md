@@ -1,5 +1,5 @@
 Q. 75: Phd Fees
-#include <stdio.h>
+```#include <stdio.h>
 #include<string.h>
 struct student
 {
@@ -20,4 +20,4 @@ printf("Details of student");
   printf("\nCourse=%s",s1.course);
   printf("\nFees=%d",s1.fees);
   return 0;
-}
+}```

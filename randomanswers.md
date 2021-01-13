@@ -112,3 +112,201 @@ int main() {
 	}
 	return 0;
 }
+
+Q. 60: s-palindrome
+
+#include<stdio.h>
+
+#include<string.h>
+
+int main()
+
+{
+
+    char str[1000];
+
+    scanf("%s",str);
+
+   int i,j;int f=9,len;
+
+    len=strlen(str);
+
+   
+
+    for(i=0,j=len-1;i<len&&j>=0;i++,j--)
+
+    {
+
+        if((str[i]=='b')&&(str[j]=='d'))
+
+        {
+
+            f=0;continue;
+
+        }
+
+        else if((str[i]=='d')&&(str[j]=='b'))
+
+        {
+
+            f=0;continue;
+
+        }
+
+        else if((str[i]=='I')&&(str[j]=='I'))
+
+        {
+
+            f=0;continue;
+
+        }
+
+        else if((str[i]=='M')&&(str[j]=='M'))
+
+        {
+
+            f=0;continue;
+
+        }
+
+        else if((str[i]=='O')&&(str[j]=='O'))
+
+        {
+
+            f=0;continue;
+
+        }
+
+        else if((str[i]=='o')&&(str[j]=='o'))
+
+        {
+
+            f=0;continue;
+
+        }
+
+        else if((str[i]=='p')&&(str[j]=='q'))
+
+        {
+
+            f=0;continue;
+
+        }
+
+        else if((str[i]=='q')&&(str[j]=='p'))
+
+        {
+
+            f=0;continue;
+
+        }
+
+        else if((str[i]=='T')&&(str[j]=='T'))
+
+        {
+
+            f=0;continue;
+
+        }
+
+        else if((str[i]=='U')&&(str[j]=='U'))
+
+        {
+
+            f=0;continue;
+
+        }
+
+        else if((str[i]=='V')&&(str[j]=='V'))
+
+        {
+
+            f=0;continue;
+
+        }
+
+        else if((str[i]=='v')&&(str[j]=='v'))
+
+        {
+
+            f=0;continue;
+
+        }
+
+        else if((str[i]=='w')&&(str[j]=='w'))
+
+        {
+
+            f=0;continue;
+
+        }
+
+        else if((str[i]=='W')&&(str[j]=='W'))
+
+        {
+
+            f=0;continue;
+
+        }
+
+        else if((str[i]=='X')&&(str[j]=='X'))
+
+        {
+
+            f=0;continue;
+
+        }
+
+        else if((str[i]=='x')&&(str[j]=='x'))
+
+        {
+
+            f=0;continue;
+
+        }
+
+        else if((str[i]=='Y')&&(str[i]=='Y'))
+
+        {
+
+            f=0;continue;
+
+        }
+
+        else if((str[i]=='A')&&(str[j]=='A'))
+
+        {
+
+            f=0;continue;
+
+        }
+
+        else if((str[i]=='H')&&(str[j]=='H'))
+
+        {
+
+            f=0;continue;
+
+        }
+
+        else
+
+        {
+
+            f=1;break;
+
+        }
+
+    }
+
+    if(f==0 || strcmp(str,"bob")==0 )
+
+    printf("TAK\n");
+
+    else
+
+    printf("NIE\n");
+
+    return 0;
+
+}

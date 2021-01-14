@@ -1,3 +1,44 @@
+***Q. 41: GATE Aspirants***
+
+    #include<stdio.h>
+    #include<stdlib.h>
+    int main() {
+    	//code
+    	int t,i,j,n,pos,max;
+    	scanf("%d",&t);
+    	for(i=0;i<t;i++)
+    	{
+    	    scanf("%d",&n);
+    	    int *arr=malloc(sizeof(int)*n);
+    	    for(j=0;j<n;j++)
+    	    scanf("%d",&arr[j]);
+    	    max=arr[0];
+    	    pos=0;
+    	    for(j=1;j<n;j++)
+    	    {
+    	        if(max<arr[j])
+    	        {max=arr[j];
+    	            pos=j;
+    	        }
+    	    }
+          
+     	 	if(pos == n-1)
+      	    printf("Ascending with maximum element %d\n", max);
+     	 	else if(pos == 0)
+      		  {
+       		   if((arr[pos] > arr[pos+1]) && (arr[pos+1] < arr[pos+2]))
+       	 	    printf("Ascending rotated with maximum element %d\n", max);
+       	 	  else
+       		     printf("Descending with maximum element %d\n", max);
+      		  }
+     		else {
+     		  if(arr[pos] > arr[pos-1])
+       			 printf("Descending rotated with maximum element %d\n", max);
+      			}
+       	 }
+    	return 0;
+    }
+
 ***Q. 42: Thorow this Dupes***
 
     #include <stdio.h>

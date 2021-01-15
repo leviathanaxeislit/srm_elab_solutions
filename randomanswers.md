@@ -596,8 +596,24 @@ Q. 65: password not strong enough
     	printf("%d", k);
         return 0;
     }
+**Q. 94: Increment Using Pointer**
+
+    #include <stdio.h>
+    int main() {
+      int a, b, c;
+      scanf("%d%d%d", &a, &b, &c);
+      int *ptr[3] = {&a, &b, &c};
+      printf("value of a: %d, b: %d, c: %d", *ptr[0], *ptr[1], *ptr[2]);
+      *ptr[0] +=10;
+      *ptr[1] +=10;
+      *ptr[2] +=10;
+      printf("\nAfter adding 10\nvalue of a: %d, b: %d, c: %d", *ptr[0], *ptr[1], *ptr[2]);
+      
+      return 0;
+    }
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzg0NzY5NzIsMjAyMjM0MTc3LC03ND
-UwMjM4OCwtODg2MDI4MzUyLDI1NzcwNTE1OF19
+eyJoaXN0b3J5IjpbODM2MTIwMzkxLC0yMTM4NDc2OTcyLDIwMj
+IzNDE3NywtNzQ1MDIzODgsLTg4NjAyODM1MiwyNTc3MDUxNThd
+fQ==
 -->

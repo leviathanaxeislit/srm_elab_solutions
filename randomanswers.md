@@ -596,7 +596,7 @@ Q. 65: password not strong enough
     	printf("%d", k);
         return 0;
     }
-**Q. 94: Increment Using Pointer**
+***Q. 94: Increment Using Pointer***
 
     #include <stdio.h>
     int main() {
@@ -613,7 +613,7 @@ Q. 65: password not strong enough
     }
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODM2MTIwMzkxLC0yMTM4NDc2OTcyLDIwMj
-IzNDE3NywtNzQ1MDIzODgsLTg4NjAyODM1MiwyNTc3MDUxNThd
-fQ==
+eyJoaXN0b3J5IjpbMTA4Njk2MDExMSwtMjEzODQ3Njk3MiwyMD
+IyMzQxNzcsLTc0NTAyMzg4LC04ODYwMjgzNTIsMjU3NzA1MTU4
+XX0=
 -->

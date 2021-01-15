@@ -33,7 +33,48 @@ Q. 53: Reverse the order of words
       }
       return 0;
     }
+***Q. 54: Deletion of sub string***
+
+    #include <stdio.h>
+    #include<string.h>
+    int main() {
+    	//code
+    	int n,i;
+    	scanf("%d",&n);
+      	for (i = 0; i < n; i++) {
+          char str[1000];
+          int lower, upper, j, stop = 0;
+          scanf("%s", str);
+          scanf("%d%d", &lower, &upper);
+          
+          if(lower < 0) {
+            printf("lower limit doesn't exist");
+            break;
+          }
+            
+          if (upper >= strlen(str)) {
+            printf("upper limit doesn't exist");
+            break;
+          }
+          
+          for (j = 0; j < strlen(str); j++) {
+            if (j == lower)
+              stop = 1;
+            if (j > upper)
+              stop = 0;
+            if (stop == 0) {
+              if (j != 0 ) {
+                printf("%c", tolower(str[j]));
+                continue;
+              }
+              printf("%c", str[j]);
+            }
+          }
+          printf("\n");
+        }
+    	return 0;
+    }
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4ODk3OTQxM119
+eyJoaXN0b3J5IjpbLTUwOTEzNTcxOCwtMzg4OTc5NDEzXX0=
 -->

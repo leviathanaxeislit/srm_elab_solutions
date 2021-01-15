@@ -512,9 +512,10 @@
        }
       return 0;
     }
+***Q. 61: where is hanoi***
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0MzczMjQyMiwtNzQ1MDIzODgsLTg4Nj
-AyODM1MiwyNTc3MDUxNThdfQ==
+eyJoaXN0b3J5IjpbNTE5MjE4Njk0LC03NDUwMjM4OCwtODg2MD
+I4MzUyLDI1NzcwNTE1OF19
 -->

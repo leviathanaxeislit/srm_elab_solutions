@@ -115,337 +115,339 @@
     	return 0;
     }
 
-Q. 60: s-palindrome
+***Q. 60: s-palindrome***
 
-#include<stdio.h>
-
-#include<string.h>
-
-int main()
-
-{
-
-    char str[1000];
-
-    scanf("%s",str);
-
-   int i,j;int f=9,len;
-
-    len=strlen(str);
-
-   
-
-    for(i=0,j=len-1;i<len&&j>=0;i++,j--)
-
+    #include<stdio.h>
+    
+    #include<string.h>
+    
+    int main()
+    
     {
-
-        if((str[i]=='b')&&(str[j]=='d'))
-
+    
+        char str[1000];
+    
+        scanf("%s",str);
+    
+       int i,j;int f=9,len;
+    
+        len=strlen(str);
+    
+       
+    
+        for(i=0,j=len-1;i<len&&j>=0;i++,j--)
+    
         {
-
-            f=0;continue;
-
+    
+            if((str[i]=='b')&&(str[j]=='d'))
+    
+            {
+    
+                f=0;continue;
+    
+            }
+    
+            else if((str[i]=='d')&&(str[j]=='b'))
+    
+            {
+    
+                f=0;continue;
+    
+            }
+    
+            else if((str[i]=='I')&&(str[j]=='I'))
+    
+            {
+    
+                f=0;continue;
+    
+            }
+    
+            else if((str[i]=='M')&&(str[j]=='M'))
+    
+            {
+    
+                f=0;continue;
+    
+            }
+    
+            else if((str[i]=='O')&&(str[j]=='O'))
+    
+            {
+    
+                f=0;continue;
+    
+            }
+    
+            else if((str[i]=='o')&&(str[j]=='o'))
+    
+            {
+    
+                f=0;continue;
+    
+            }
+    
+            else if((str[i]=='p')&&(str[j]=='q'))
+    
+            {
+    
+                f=0;continue;
+    
+            }
+    
+            else if((str[i]=='q')&&(str[j]=='p'))
+    
+            {
+    
+                f=0;continue;
+    
+            }
+    
+            else if((str[i]=='T')&&(str[j]=='T'))
+    
+            {
+    
+                f=0;continue;
+    
+            }
+    
+            else if((str[i]=='U')&&(str[j]=='U'))
+    
+            {
+    
+                f=0;continue;
+    
+            }
+    
+            else if((str[i]=='V')&&(str[j]=='V'))
+    
+            {
+    
+                f=0;continue;
+    
+            }
+    
+            else if((str[i]=='v')&&(str[j]=='v'))
+    
+            {
+    
+                f=0;continue;
+    
+            }
+    
+            else if((str[i]=='w')&&(str[j]=='w'))
+    
+            {
+    
+                f=0;continue;
+    
+            }
+    
+            else if((str[i]=='W')&&(str[j]=='W'))
+    
+            {
+    
+                f=0;continue;
+    
+            }
+    
+            else if((str[i]=='X')&&(str[j]=='X'))
+    
+            {
+    
+                f=0;continue;
+    
+            }
+    
+            else if((str[i]=='x')&&(str[j]=='x'))
+    
+            {
+    
+                f=0;continue;
+    
+            }
+    
+            else if((str[i]=='Y')&&(str[i]=='Y'))
+    
+            {
+    
+                f=0;continue;
+    
+            }
+    
+            else if((str[i]=='A')&&(str[j]=='A'))
+    
+            {
+    
+                f=0;continue;
+    
+            }
+    
+            else if((str[i]=='H')&&(str[j]=='H'))
+    
+            {
+    
+                f=0;continue;
+    
+            }
+    
+            else
+    
+            {
+    
+                f=1;break;
+    
+            }
+    
         }
-
-        else if((str[i]=='d')&&(str[j]=='b'))
-
-        {
-
-            f=0;continue;
-
-        }
-
-        else if((str[i]=='I')&&(str[j]=='I'))
-
-        {
-
-            f=0;continue;
-
-        }
-
-        else if((str[i]=='M')&&(str[j]=='M'))
-
-        {
-
-            f=0;continue;
-
-        }
-
-        else if((str[i]=='O')&&(str[j]=='O'))
-
-        {
-
-            f=0;continue;
-
-        }
-
-        else if((str[i]=='o')&&(str[j]=='o'))
-
-        {
-
-            f=0;continue;
-
-        }
-
-        else if((str[i]=='p')&&(str[j]=='q'))
-
-        {
-
-            f=0;continue;
-
-        }
-
-        else if((str[i]=='q')&&(str[j]=='p'))
-
-        {
-
-            f=0;continue;
-
-        }
-
-        else if((str[i]=='T')&&(str[j]=='T'))
-
-        {
-
-            f=0;continue;
-
-        }
-
-        else if((str[i]=='U')&&(str[j]=='U'))
-
-        {
-
-            f=0;continue;
-
-        }
-
-        else if((str[i]=='V')&&(str[j]=='V'))
-
-        {
-
-            f=0;continue;
-
-        }
-
-        else if((str[i]=='v')&&(str[j]=='v'))
-
-        {
-
-            f=0;continue;
-
-        }
-
-        else if((str[i]=='w')&&(str[j]=='w'))
-
-        {
-
-            f=0;continue;
-
-        }
-
-        else if((str[i]=='W')&&(str[j]=='W'))
-
-        {
-
-            f=0;continue;
-
-        }
-
-        else if((str[i]=='X')&&(str[j]=='X'))
-
-        {
-
-            f=0;continue;
-
-        }
-
-        else if((str[i]=='x')&&(str[j]=='x'))
-
-        {
-
-            f=0;continue;
-
-        }
-
-        else if((str[i]=='Y')&&(str[i]=='Y'))
-
-        {
-
-            f=0;continue;
-
-        }
-
-        else if((str[i]=='A')&&(str[j]=='A'))
-
-        {
-
-            f=0;continue;
-
-        }
-
-        else if((str[i]=='H')&&(str[j]=='H'))
-
-        {
-
-            f=0;continue;
-
-        }
-
+    
+        if(f==0 || strcmp(str,"bob")==0 )
+    
+        printf("TAK\n");
+    
         else
+    
+        printf("NIE\n");
+    
+        return 0;
+    
+    }
 
+***Q. 70: classic prime***
+
+    #include <stdio.h>
+    #include <math.h>
+    
+    
+    /* Function declarations */
+    int isPrime(int num);
+    int isArmstrong(int num);
+    int isPerfect(int num);
+    
+    
+    int main()
+    {
+        int num;
+        scanf("%d", &num);
+        
+        // Call isPrime() functions
+        if(isPrime(num))
         {
-
-            f=1;break;
-
+            printf("%d is Prime number.\n", num);
         }
-
-    }
-
-    if(f==0 || strcmp(str,"bob")==0 )
-
-    printf("TAK\n");
-
-    else
-
-    printf("NIE\n");
-
-    return 0;
-
-}
-
-Q. 70: classic prime
-#include <stdio.h>
-#include <math.h>
-
-
-/* Function declarations */
-int isPrime(int num);
-int isArmstrong(int num);
-int isPerfect(int num);
-
-
-int main()
-{
-    int num;
-    scanf("%d", &num);
-    
-    // Call isPrime() functions
-    if(isPrime(num))
-    {
-        printf("%d is Prime number.\n", num);
-    }
-    else
-    {
-        printf("%d is not Prime number.\n", num);
-    }
-    
-    // Call isArmstrong() function
-    if(isArmstrong(num))
-    {
-        printf("%d is Armstrong number.\n", num);
-    }
-    else
-    {
-        printf("%d is not Armstrong number.\n", num);
-    }
-    
-    // Call isPerfect() function
-    if(isPerfect(num))
-    {
-        printf("%d is Perfect number.\n", num);
-    }
-    else
-    {
-        printf("%d is not Perfect number.\n", num);
-    }
-    
-    return 0;
-}
-
-
-
-/**
- * Check whether a number is prime or not. 
- * Returns 1 if the number is prime otherwise 0.
- */
-int isPrime(int num) 
-{
-    int i;
-    
-    for(i=2; i<=num/2; i++)  
-    {  
-        /*  
-         * If the number is divisible by any number  
-         * other than 1 and self then it is not prime 
-         */  
-        if(num%i == 0)  
+        else
         {
-            return 0;
-        }  
-    } 
+            printf("%d is not Prime number.\n", num);
+        }
+        
+        // Call isArmstrong() function
+        if(isArmstrong(num))
+        {
+            printf("%d is Armstrong number.\n", num);
+        }
+        else
+        {
+            printf("%d is not Armstrong number.\n", num);
+        }
+        
+        // Call isPerfect() function
+        if(isPerfect(num))
+        {
+            printf("%d is Perfect number.\n", num);
+        }
+        else
+        {
+            printf("%d is not Perfect number.\n", num);
+        }
+        
+        return 0;
+    }
     
-    return 1; 
-}
-
-
-
-/**
- * Check whether a number is Armstrong number or not. 
- * Returns 1 if the number is Armstrong number otherwise 0.
- */
-int isArmstrong(int num) 
-{
-    int lastDigit, sum, originalNum, digits;
-    sum = 0;
     
-    originalNum = num;
-
-    /* Find total digits in num */
-    digits = (int) log10(num) + 1;
-
-    /*
-     * Calculate sum of power of digits
+    
+    /**
+     * Check whether a number is prime or not. 
+     * Returns 1 if the number is prime otherwise 0.
      */
-    while(num > 0)
+    int isPrime(int num) 
     {
-        // Extract the last digit
-        lastDigit = num % 10;
-
-        // Compute sum of power of last digit
-        sum = sum + round(pow(lastDigit, digits));
-
-        // Remove the last digit
-        num = num / 10;
-    }
-    
-    return (originalNum == sum);
-}
-
-
-
-/**
- * Check whether the number is perfect number or not. 
- * Returns 1 if the number is perfect otherwise 0.
- */
-int isPerfect(int num) 
-{
-    int i, sum, n;
-    sum = 0;
-    n = num;
-    
-    for(i=1; i<n; i++)  
-    {  
-        /* If i is a divisor of num */  
-        if(n%i == 0)  
+        int i;
+        
+        for(i=2; i<=num/2; i++)  
         {  
-            sum += i;  
-        }  
+            /*  
+             * If the number is divisible by any number  
+             * other than 1 and self then it is not prime 
+             */  
+            if(num%i == 0)  
+            {
+                return 0;
+            }  
+        } 
+        
+        return 1; 
     }
     
-    return (num == sum);
-}
+    
+    
+    /**
+     * Check whether a number is Armstrong number or not. 
+     * Returns 1 if the number is Armstrong number otherwise 0.
+     */
+    int isArmstrong(int num) 
+    {
+        int lastDigit, sum, originalNum, digits;
+        sum = 0;
+        
+        originalNum = num;
+    
+        /* Find total digits in num */
+        digits = (int) log10(num) + 1;
+    
+        /*
+         * Calculate sum of power of digits
+         */
+        while(num > 0)
+        {
+            // Extract the last digit
+            lastDigit = num % 10;
+    
+            // Compute sum of power of last digit
+            sum = sum + round(pow(lastDigit, digits));
+    
+            // Remove the last digit
+            num = num / 10;
+        }
+        
+        return (originalNum == sum);
+    }
+    
+    
+    
+    /**
+     * Check whether the number is perfect number or not. 
+     * Returns 1 if the number is perfect otherwise 0.
+     */
+    int isPerfect(int num) 
+    {
+        int i, sum, n;
+        sum = 0;
+        n = num;
+        
+        for(i=1; i<n; i++)  
+        {  
+            /* If i is a divisor of num */  
+            if(n%i == 0)  
+            {  
+                sum += i;  
+            }  
+        }
+        
+        return (num == sum);
+    }
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Mjc2MDYyNjhdfQ==
+eyJoaXN0b3J5IjpbMjU3NzA1MTU4XX0=
 -->

@@ -611,9 +611,34 @@ Q. 65: password not strong enough
       
       return 0;
     }
+***Q. 77: Student Marksheet***
+
+    #include <stdio.h>
+    #include<string.h>
+    union Student{
+      char name[60];
+      int tamil,english,maths,science,ss;
+    };
+    int main() {
+      union Student s1;
+      printf("Details of student\n");
+      scanf("%s",s1.name);
+       printf("Name of the student=%s\n",s1.name);
+      scanf("%d",&s1.tamil);
+      printf("Tamil=%d\n",s1.tamil);
+      scanf("%d",&s1.english);
+      printf("English=%d\n",s1.english);
+      scanf("%d",&s1.maths);
+      printf("Maths=%d\n",s1.maths);
+      scanf("%d",&s1.science);
+      printf("Science=%d\n",s1.science);
+      scanf("%d",&s1.ss);
+      printf("Social Science=%d",s1.ss);
+    	return 0;
+    }
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4Njk2MDExMSwtMjEzODQ3Njk3MiwyMD
-IyMzQxNzcsLTc0NTAyMzg4LC04ODYwMjgzNTIsMjU3NzA1MTU4
-XX0=
+eyJoaXN0b3J5IjpbLTE2MTM1MTg2NzksMTA4Njk2MDExMSwtMj
+EzODQ3Njk3MiwyMDIyMzQxNzcsLTc0NTAyMzg4LC04ODYwMjgz
+NTIsMjU3NzA1MTU4XX0=
 -->

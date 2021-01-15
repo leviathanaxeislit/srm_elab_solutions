@@ -446,8 +446,35 @@
         return (num == sum);
     }
 
+***Q. 57: Pattern Searching***
+
+    #include <stdio.h>
+    #include <string.h>
+    
+    int main()
+    
+    {
+    
+      int n,i,flag;
+    
+      char x[10],y[10];
+      scanf("%d",&n);
+    
+      for (i = 0; i < n; i++) {
+        char word[1000], sub[1000];
+        scanf("%s%s", word, sub);
+        if (strstr(word, sub) == NULL) 
+          printf("not found");
+        else
+          printf("found");
+      }
+      
+      return 0;
+    
+    }
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjU3NzA1MTU4XX0=
+eyJoaXN0b3J5IjpbLTg4NjAyODM1MiwyNTc3MDUxNThdfQ==
 -->

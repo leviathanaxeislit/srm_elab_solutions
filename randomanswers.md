@@ -514,8 +514,27 @@
     }
 ***Q. 61: where is hanoi***
 
+    #include "stdio.h"
+    void towerOfHanoi(int n, char srcTower, char dstTower, char bufferTower) {
+      if (n <= 0) return;
+      if (n == 1) {
+        printf("Move disk 1 from rod %c to rod %c\n", srcTower, dstTower);
+        return;
+      }
+      towerOfHanoi(n - 1, srcTower, bufferTower, dstTower);
+      printf("Move disk %d from rod %c to rod %c\n", n, srcTower, dstTower);
+      towerOfHanoi(n - 1, bufferTower, dstTower, srcTower);
+    }
+    int main() {
+      int i = 0;
+      int n = 0;
+      scanf("%d", &n);
+      towerOfHanoi(n, 'A', 'C', 'B');
+      return 0;
+    }
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTE5MjE4Njk0LC03NDUwMjM4OCwtODg2MD
+eyJoaXN0b3J5IjpbMjAyMjM0MTc3LC03NDUwMjM4OCwtODg2MD
 I4MzUyLDI1NzcwNTE1OF19
 -->

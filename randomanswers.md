@@ -533,8 +533,71 @@
       return 0;
     }
 
+Q. 65: password not strong enough
+
+    #include <stdio.h>
+    
+    
+    int length = 0;
+    int digit = 0;
+    int lower = 0;
+    int upper = 0;
+    int special = 0;
+      
+    
+    int pass(char s[],int n) {
+      int i;
+      
+      length = n;
+        
+      for (i = 0; i < n; i++) {
+        if (s[i] >= 48 && s[i] <= 57)
+          digit = 1;
+        
+        if (s[i] >= 97 && s[i] <= 122)
+          lower = 1;
+        
+        if (s[i] >= 65 && s[i] <= 90)
+          upper = 1;
+        
+        switch(s[i]) {
+          case '!':
+          case '@':
+          case '#':
+          case '$':
+          case '%':
+          case '^':
+          case '&':
+          case '*':
+          case '(':
+          case ')':
+          case '-':
+          case '+':
+            special = 1;
+        }  
+      }
+    }
+    
+    int main() {
+        int n; 
+        scanf("%i", &n);
+        char password[1024];
+        scanf("%s", password);
+        int answer = pass(password, n);
+      	int k = 4 - (digit + lower+ upper + special);
+      	if (length < 6) {
+          if (k > 6 - length) {
+            printf("%d", k);
+            return 0;
+          }
+          printf("%d", 6 - length);
+          return 0;
+        }
+    	printf("%d", k);
+        return 0;
+    }
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyMjM0MTc3LC03NDUwMjM4OCwtODg2MD
-I4MzUyLDI1NzcwNTE1OF19
+eyJoaXN0b3J5IjpbLTIxMzg0NzY5NzIsMjAyMjM0MTc3LC03ND
+UwMjM4OCwtODg2MDI4MzUyLDI1NzcwNTE1OF19
 -->

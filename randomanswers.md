@@ -657,9 +657,29 @@ Q. 65: password not strong enough
         printf("Seconds:%d\n",diff.seconds);
         return 0; 
     }
+***Q. 78: Add Up the Distance***
+
+    #include <stdio.h>
+    union Distance
+    {
+      int feet_of_type;
+      float inch_of_type;
+    };
+    int main()
+    {
+      union Distance d1,d2,sumOfDistances;
+      scanf("%d %d\n",&d1.feet_of_type,&d2.feet_of_type );
+      sumOfDistances.feet_of_type=d1.feet_of_type+d2.feet_of_type;
+      printf("Sum of distances=%d feet\n",sumOfDistances.feet_of_type);
+      scanf("%f %f\n",&d1.inch_of_type,&d2.inch_of_type);
+      sumOfDistances.inch_of_type=d1.inch_of_type+d2.inch_of_type;    
+      printf("Sum of distances=%.2f inches",sumOfDistances.inch_of_type);
+      return 0;
+    }
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzMTkxNzczMiwtMTYxMzUxODY3OSwxMD
-g2OTYwMTExLC0yMTM4NDc2OTcyLDIwMjIzNDE3NywtNzQ1MDIz
-ODgsLTg4NjAyODM1MiwyNTc3MDUxNThdfQ==
+eyJoaXN0b3J5IjpbLTE2ODQyNTMyOTIsMTMzMTkxNzczMiwtMT
+YxMzUxODY3OSwxMDg2OTYwMTExLC0yMTM4NDc2OTcyLDIwMjIz
+NDE3NywtNzQ1MDIzODgsLTg4NjAyODM1MiwyNTc3MDUxNThdfQ
+==
 -->

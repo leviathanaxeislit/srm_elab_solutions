@@ -636,9 +636,30 @@ Q. 65: password not strong enough
       printf("Social Science=%d",s1.ss);
     	return 0;
     }
+***Q. 76: Sonata***
+
+    #include <stdio.h>
+    union Time
+    {
+      int seconds,minutes,hours;
+    };
+    int main(){
+        union Time startTime,stopTime,diff;
+        printf("The time difference is\n");
+        scanf("%d %d\n",&startTime.hours,&stopTime.hours);
+        diff.hours=startTime.hours-stopTime.hours;
+        printf("Hours:%d\n",diff.hours);
+        scanf("%d %d\n ",&startTime.minutes,&stopTime.minutes);
+        diff.hours=startTime.minutes-stopTime.minutes;
+        printf("Minutes:%d\n",diff.minutes);
+        scanf("%d %d",&startTime.seconds,&stopTime.seconds);
+        diff.hours=startTime.seconds-stopTime.seconds;
+        printf("Seconds:%d\n",diff.seconds);
+        return 0; 
+    }
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTM1MTg2NzksMTA4Njk2MDExMSwtMj
-EzODQ3Njk3MiwyMDIyMzQxNzcsLTc0NTAyMzg4LC04ODYwMjgz
-NTIsMjU3NzA1MTU4XX0=
+eyJoaXN0b3J5IjpbMTMzMTkxNzczMiwtMTYxMzUxODY3OSwxMD
+g2OTYwMTExLC0yMTM4NDc2OTcyLDIwMjIzNDE3NywtNzQ1MDIz
+ODgsLTg4NjAyODM1MiwyNTc3MDUxNThdfQ==
 -->

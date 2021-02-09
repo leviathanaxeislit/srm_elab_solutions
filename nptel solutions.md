@@ -23,6 +23,20 @@
         return 0;
     }
 
+**Week-03 Program-04**
+
+    if (n1 >= n2 && n1 >= n3) 
+            printf("%d is the largest number.", n1); 
+      
+        if (n2 >= n1 && n2 >= n3) 
+            printf("%d is the largest number.", n2); 
+      
+        if (n3 >= n1 && n3 >= n2) 
+            printf("%d is the largest number.", n3); 
+      
+        return 0; 
+    } 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4ODEwOTY3NV19
+eyJoaXN0b3J5IjpbODMwNTY1NTI4XX0=
 -->

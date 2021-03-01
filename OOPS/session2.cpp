@@ -433,3 +433,228 @@ int main()
     lib2.show();
     return 0;
 }
+
+//Q. 18: Land Survey
+
+#include <iostream>
+
+using namespace std;
+
+class room
+{
+    int l, b, h;
+public:
+    void getroom()
+
+    {
+        cin >> l >> b >> h;
+    }
+
+    void putroom()
+
+    {
+        cout << "Length=" << l;
+
+        cout << endl;
+
+        cout << "Breadth=" << b;
+
+        cout << endl;
+
+        cout << "Height=" << h;
+
+        cout << endl;
+    }
+};
+
+class address
+{
+    int hno;
+
+    char cty[30];
+
+    char state[30];
+
+public:
+    void getad()
+
+    {
+
+        cin >> hno;
+
+        cin >> cty;
+
+        cin >> state;
+    }
+
+    void putad()
+
+    {
+
+        cout << "House No=" << hno;
+
+        cout << endl;
+
+        cout << "City=" << cty;
+
+        cout << endl;
+
+        cout << "State=" << state;
+
+        cout << endl;
+    }
+};
+
+class house
+{
+    char housename[30];
+
+    address a;
+
+    room r[10];
+
+    int n;
+
+public:
+    void input();
+
+    void display();
+};
+
+void house ::input()
+
+{
+
+    cin >> housename;
+
+    cout << "House name=" << housename << endl;
+
+    a.getad();
+
+    a.putad();
+
+    cin >> n;
+
+    for (int i = 0; i < n; i++)
+
+    {
+        r[i].getroom();
+    }
+}
+
+void house ::display()
+
+{
+    for (int i = 0; i < n; i++)
+
+    {
+        cout << "Details of Room " << i + 1 << "\n";
+
+        r[i].putroom();
+    }
+}
+
+int main()
+
+{
+    house x;
+
+    x.input();
+
+    x.display();
+
+    return 0;
+}
+
+// Q. 19: lomda
+
+#include <iostream>
+using namespace std;
+class partner
+{
+public:
+    void findpartner()
+    {
+        int n = 0, s = 0, i = 0;
+        cin >> n;
+        if (1 <= n && n <= 8)
+        {
+            int arr[n];
+            for (i = 0; i < n; i++)
+            {
+                cin >> arr[i];
+                if (arr[i] <= 8)
+                {
+                    if (arr[i] == 1)
+                        cout << "4LB\n";
+                    else if (arr[i] == 5)
+                        cout << "2MB\n";
+                    else if (arr[i] == 3)
+                        cout << "6UB\n";
+                    else if (arr[i] == 2)
+                        cout << "5MB\n";
+                    else if (arr[i] == 4)
+                        cout << "1LB\n";
+                    else if (arr[i] == 6)
+                        cout << "3UB\n";
+                }
+            }
+        }
+    }
+};
+int main()
+{
+    partner objname;
+    objname.findpartner();
+
+    return 0;
+}
+
+//Q. 20: RBI
+
+#include <iostream>
+#include <string.h>
+using namespace std;
+class Bank
+{
+private:
+    char name[50];
+    char accounttype[50];
+    int acc;
+    double balance;
+
+public:
+    void initial()
+    {
+        std::cin >> name >> acc >> accounttype >> balance;
+    }
+    void deposit()
+    {
+        float deposit;
+        cin >> deposit;
+        balance += deposit;
+    }
+    void withdraw()
+    {
+        float withdraw;
+        cin >> withdraw;
+        if (withdraw > balance)
+        {
+            cout << "Insufficient amount\n";
+        }
+        else
+            balance -= withdraw;
+    }
+    void disp() { cout << "NAME=" << name << "\nACCNO=" << acc << "\nTYPE=" << accounttype << "\nBALANCEAMOUNT=" << balance << endl; }
+};
+
+int main()
+{
+    float deposit, withdraw;
+    Bank obj;
+    obj.initial();
+    obj.deposit();
+    obj.withdraw();
+    obj.disp();
+    return 0;
+}
